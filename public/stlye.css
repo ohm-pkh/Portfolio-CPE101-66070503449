@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-height: fit-content;
+}
+
+:root{
+    --clr:#B0B0B0;
+    --tclr:#4A0000;
+}
+
+body{
+    min-height: 100vh;
+    background: #181717;
+    overflow: auto;
+    overflow-x: hidden;
+    font-family: 'Pixelify Sans', sans-serif;
+
+}
+
+.navigator{
+    width: 100%;
+    height: 8.5%;
+    background: var(--clr);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    
+}
+
+.navigator ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border:solid var(--tclr) 5px;
+    background: var(--clr);
+
+}
+
+.navigator ul li{
+    position: relative;
+    list-style: none;
+    width: 70%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+
+}
+
+.navigator ul li a{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    color: #4A0000;
+    text-decoration: none;
+    font-size: 160%;
+}
+
+
+.navigator ul li a:hover{
+    color: #B0B0B0;
+    background-color: #4A0000;
+    font-size: 200%;
+}
+
+.navigator ul li a:active{
+    color: #181717;
+    font-size: 200%;
+}
+
+.Container{
+    z-index: 0;
+    height: 100vh;
+    padding: 5%;
+    width: 200%;
+
+}
+.lan{
+    background-image:url("941959.png") ;
+    background-repeat:no-repeat ;
+}
+
+.lan h1{
+    color: #B0B0B0;
+    font-size: 500%;
+    display: inline;
+}
+
+.name1{
+    display: flex;
+    gap: 3%;
+}
+
+.land_D{
+    background-color: #181717;
+    margin-left: 15%;
+    margin-top: 2%;
+    padding: 0.5%;
+    border-radius: 15px;
+    width: fit-content;
+    border:solid #4A0000;
+}
+
+.Container h2{
+    color: #4A0000;
+}
+.chr{
+    margin-top: 3%;
+    margin-left: 27%;
+    animation-name: dog;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dog {
+    0%{margin-top:3%;}
+    50%{margin-top:7%;}
+}
+
+.hearder_con{
+    margin-top: -0.5%;
+    width: 90%;
+    text-align: center;
+    opacity: 0.5;
+    background-color: #4A0000;
+    border: solid #B0B0B0;
+}
+
+.hearder{
+    font-size: 300%;
+}
+
+.my_pic{
+    margin-top: 2%;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    padding-left: 36%;
+}
+.pic{
+    border-radius: 10px;
+    border: solid #4A0000 7px;
+}
+
+.infor{
+    margin-top: 2%;
+    width: 90%;
+    padding : 5%;
+    background-color: #4A0000;
+    border: #B0B0B0 solid;
+    opacity: 0.5;
+    font-size: 130%;
+    line-height: 150%;
+}
+
+
+.ED{
+    background-color: #B0B0B0;
+}
+
+.holder{
+    margin-top:3%;
+    width: 50%;
+    float: left;
+    display: block;
+}
+
+.card{
+    margin-bottom: 5%;
+}
+
+.E_D{
+    box-sizing: border-box;
+}
+
+.imag{
+    width: 50%;
+    float: left;
+}
+
+.slime{
+    margin-top: 22%;
+    animation-name: slime_w;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slime_w {
+    0%{margin-left: 2%;}
+    25%{margin-left: 5%;}
+    50%{margin-left:10%;}
+    75%{margin-left: 5%;}
+    100%{margin-left:0%;}
+}
+
+.H_C{
+    width: 90%;
+    text-align: center;
+    color: #B0B0B0;
+}
+
+.cc{
+    background-image: url("8686268.jpg");
+}
+
+.row{
+    width: 90%;
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    gap: 5%;
+    text-align: center;
+
+}
+
+.row h1{
+    font-size: 200%;
+}
+
+.row .card{
+    color: #4A0000;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.chart{
+    width: 100%;
+    border-radius: 10px;
+    height: 0.5rem;
+    background-color: #B0B0B0;
+}
+
+.C .grade{
+    width: 80%;
+    border-radius: 10px;
+    height: 0.5rem;
+    background-color: #4EFF66;
+}
+
+.CPP .grade{
+    width: 60%;
+    border-radius: 10px;
+    height: 0.5rem;
+    background-color: #FFFB6E;
+}
+
+.PY .grade{
+    width: 80%;
+    border-radius: 10px;
+    height: 0.5rem;
+    background-color: #4EFF66;
+}
+
+.HTM .grade{
+    width: 90%;
+    border-radius: 10px;
+    height: 0.5rem;
+    background-color: #4EFF66;
+}
+
+.cs .grade{
+    width: 70%;
+    border-radius: 10px;
+    height: 0.5rem;
+    background-color: #4EFF66;
+}
+
+.js .grade{
+    width: 50%;
+    border-radius: 10px;
+    height: 0.5rem;
+    background-color: #FFFB6E;
+}
+
+.place{
+    height: 100%;
+    width: 90%;
+    background-color: #181717;
+    opacity: 0.4;
+    margin-top: -30%;
+}
+.cc{
+    text-align: center;
+    justify-content: center;
+}
+
+.cc .hearder{
+    margin-left: -10%;
+    margin-bottom: 6%;
+}
+
+.con{
+    display: flex;
+}
+
+.C1{
+    display: flex;
+    flex-direction: column;
+}
+
+.C1 a{
+    margin-bottom: 6%;
+    float: left;
+}
+
+.ad{
+    width: 50%;
+    margin-left: 10%;
+}
+
+.C1 h2{
+    margin-bottom: 6%;
+}
+
+.ad h2{
+    font-size: 200%;
+}
+
+.ad p{
+    font-size: 130%;
+}
+
+.VV{
+    text-align: left;
+    justify-content: left;
+    margin-left:-15% ;
+}
+
